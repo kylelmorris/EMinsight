@@ -1,4 +1,4 @@
-#!/dls_sw/apps/EM/ebic.scripts/0.0/ebic.scripts_python/bin/python
+#!/usr/bin/env python3
 
 # These programs make up the package EMinsight
 #
