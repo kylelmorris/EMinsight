@@ -11,16 +11,16 @@ Run the following command to set up a vritual environment for EMinsight
 
 $ cd ~/EMinsight
 
-$ python -m venv EMinsight
+$ python -m venv python
 
-$ source EMinsight/bin/activate
+$ source python/bin/activate
 
 $ pip install .
 
 Each time you want to use EMinsight, remember to activate that virtual environment
 
-$ source ~/EMinsight/bin/activate
+$ source ~/EMinsight/python/bin/activate
 
 You may want to add EMinsight to your ~/.bash_profile, ~/.zshrc or equivalent
 
-export PATH="~/EMinsight/bin" 
+export PATH="~/EMinsight/bin:$PATH"
