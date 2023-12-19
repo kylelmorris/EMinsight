@@ -11,7 +11,7 @@ Run the following command to set up a vritual environment for EMinsight
 
 $ cd ~/EMinsight
 
-$ python -m EMinsight venv
+$ python -m venv EMinsight
 
 $ source EMinsight/bin/activate
 
