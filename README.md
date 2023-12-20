@@ -25,16 +25,21 @@ $ source EMinsight/bin/activate
 # Usage instructions
 
 Navigate to the directory you want to send outputs to (optional)
+
 $ cd /path/to/working/output/area
 
 Run a report on a single visit diretory
+
 $ epu.xml_summary.py --help
+
 $ epu.xml_summary.py --i /dls/m07/data/2023/bi23047-106 --o bi23047-106
 
 Run a global report across all visits from all visits on m07 in 2023
+
 $ epu.reporting.py --o global --input /dls/m07/data/2023
 
 Use a GUI to achieve the same as above
+
 $ eminsight.py
 
 # Data structure
@@ -47,9 +52,10 @@ dls <br />
 │   │   ├── 2023 # year of collection <br />
 |   |   |   └── bi23047-106 # unique eBIC/DLS data collection identifer <br />
 |   |   |   |   ├── Atlas <br />
-|   |   |   |   |   └── Supervisor_[date]_[time]-[session-identifier]_Atlas # Atlas directory used by EPU session <br />
+|   |   |   |   |   └── Supervisor\_[date]_[time]-[session-identifier]_Atlas # Atlas directory used by EPU session <br />
 |   |   |   |   ├── processed <br />
-|   |   |   |   |   └── Relion <br />
+|   |   |   |   |   └── raw
+|   |   |   |   |   |   └── Relion <br />
 |   |   |   |   ├── processing <br />
 |   |   |   |   ├── raw <br />
 |   |   |   |   |   ├── GridSquare_[Square-ID] # Raw movie data from EPU session <br />
