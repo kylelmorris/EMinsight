@@ -960,10 +960,25 @@ def run():
         gatherScreening(xml_targets.listSquares, main.report_screening_path)
 
 def getScopeFromPath(path):
-   # Find out what microscope this was on from the path
-   mXX = path.split('/')[2]
-   scope = magDfTable.loc[magDfTable['mXX'] == str(mXX), '#name'].item()
-   return scope
+    # Expects path /dls/mXX/data/2023/bi23047-106 at DLS but code should handle when mXX is at a different level
+    # When it cannot find mXX as might be the case in other facilities the function returns m00
+
+    # Regular expression pattern for finding 'mXX'
+    pattern = re.compile(r'/m\d{2}/')
+
+    # Search for the pattern in the path
+    match = pattern.search(path)
+    if match:
+        # Extracting 'mXX' from the match
+        mXX = match.group(0).strip('/')
+        # Assuming magDfTable is a pre-defined DataFrame with necessary data
+        scope = magDfTable.loc[magDfTable['mXX'] == mXX, '#name'].item()
+    else:
+        # Handle the case where 'mXX' is not found
+        #raise ValueError("mXX not found in path")
+        scope = 'm00'
+
+    return scope
 
 def lookupBAG(visitID):
     proposal = visitID.split('-')[0]

@@ -13,6 +13,7 @@ setup(
     author_email='kyle.morris@diamond.ac.uk',
     url='https://github.com/kylelmorris/EMinsight',
     install_requires=[
+        'glom',
         'tqdm',
         'pandas',
         'numpy',
