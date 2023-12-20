@@ -41,24 +41,24 @@ $ eminsight.py
 
 EMinsight currently expects data structured in the following way
 
-|-dls <br />
-  -|-m02 # eBIC/DLS instrument identifier <br />
-    -|-data <br />
-      -|-2023 # year of collection <br />
-        -|-bi23047-106 # unique eBIC/DLS data collection identifer <br />
-          -|-Atlas <br />
-            -|-Supervisor_[date]_[time]-[session-identifier]_Atlas # Atlas directory used by EPU session <br />
-          -|-processed # Preprocessing pipeline results <br />
-          -|-processing # User processing area <br />
-          -|-raw <br />
-            -|-GridSquare_[Square-ID] # Raw movie data from EPU session <br />
-              -|-Data # Raw data from this GridSquare <br />
-            -|-metadata <br />
-              -|-Supervisor_[date]_[time]_[unique-session-identifier]_EPU # EPU session files, xml metadata, compressed images <br />
-                -|-Images-Disc1 <br />
-                  -|-GridSquare_[Square-ID] <br />
-                    -|-Data <br />
-                    -|-FoilHoles <br />
+|-- dls <br />
+    |-- m02 # eBIC/DLS instrument identifier <br />
+        |-- data <br />
+            |-- 2023 # year of collection <br />
+                |-- bi23047-106 # unique eBIC/DLS data collection identifer <br />
+                    |-- Atlas <br />
+                        |-- Supervisor_[date]_[time]-[session-identifier]_Atlas # Atlas directory used by EPU session <br />
+                    |-- processed # Preprocessing pipeline results <br />
+                    |-- processing # User processing area <br />
+                    |-- raw <br />
+                        |-- GridSquare_[Square-ID] # Raw movie data from EPU session <br />
+                            |-- Data # Raw data from this GridSquare <br />
+                        |-- metadata <br />
+                            |-- Supervisor_[date]_[time]_[unique-session-identifier]_EPU # EPU session files, xml metadata, compressed images <br />
+                                |-- Images-Disc1 <br />
+                                    |-- GridSquare_[Square-ID] <br />
+                                        |-- Data <br />
+                                        |-- FoilHoles <br />
 
 Further development is required to make this robust to scenarios where other facilities use: <br />
     Different data collection identifiers (i.e. bi23047-106 versus YYYYMMDD) <br />
