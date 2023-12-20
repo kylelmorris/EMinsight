@@ -1,0 +1,24 @@
+,0
+Microscope,TITAN52336320
+epuversion,3.0.0-873.0
+date,2023-09-19 14:03:40
+eV,300000
+mag,165000
+apix,1.1
+nominal_defocus_min_microns,-0.5
+nominal_defocus_max_microns,-2.5
+spot_size,5
+C2_micron,50
+Objective_micron,100
+beam_diameter_micron,0.5
+collection,AFIS
+number_of_images,2597
+grid_type,HoleyCarbon
+available_squares,272
+collected_squares,3
+average_foils_per_square,124
+hole_size_micron,1.2
+hole_space_micron,1.3
+shots_per_hole,7
+total_dose_eA2,50.0
+fraction_dose_eA2,1.0
