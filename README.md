@@ -41,24 +41,24 @@ $ eminsight.py
 
 EMinsight currently expects data structured in the following way
 
-dls
-├── m02 # eBIC/DLS instrument identifier
-│   ├── data
-│   │   ├── 2023 # year of collection
-|   |   |   └── bi23047-106 # unique eBIC/DLS data collection identifer
-|   |   |   |   ├── Atlas
-|   |   |   |   |   └── Supervisor_[date]_[time]-[session-identifier]_Atlas # Atlas directory used by EPU session
-|   |   |   |   ├── processed
-|   |   |   |   |   └── Relion
-|   |   |   |   ├── processing
-|   |   |   |   ├── raw
-|   |   |   |   |   ├── GridSquare_[Square-ID] # Raw movie data from EPU session
-|   |   |   |   |   |   └── Data # Raw data from this GridSquare
-|   |   |   |   |   ├── metadata
-|   |   |   |   |   |   └── Supervisor_[date]_[time]_[unique-session-identifier]_EPU # EPU session files, xml metadata, compressed images
-|   |   |   |   |   |   |   └── Images-Disc1
-|   |   |   |   |   |   |   |   ├── Data
-|   |   |   |   |   |   |   |   ├── FoilHoles
+dls <br />
+├── m02 # eBIC/DLS instrument identifier <br />
+│   ├── data <br />
+│   │   ├── 2023 # year of collection <br />
+|   |   |   └── bi23047-106 # unique eBIC/DLS data collection identifer <br />
+|   |   |   |   ├── Atlas <br />
+|   |   |   |   |   └── Supervisor_[date]_[time]-[session-identifier]_Atlas # Atlas directory used by EPU session <br />
+|   |   |   |   ├── processed <br />
+|   |   |   |   |   └── Relion <br />
+|   |   |   |   ├── processing <br />
+|   |   |   |   ├── raw <br />
+|   |   |   |   |   ├── GridSquare_[Square-ID] # Raw movie data from EPU session <br />
+|   |   |   |   |   |   └── Data # Raw data from this GridSquare <br />
+|   |   |   |   |   ├── metadata <br />
+|   |   |   |   |   |   └── Supervisor_[date]_[time]_[unique-session-identifier]_EPU # EPU session files, xml metadata, compressed images <br />
+|   |   |   |   |   |   |   └── Images-Disc1 <br />
+|   |   |   |   |   |   |   |   ├── Data <br />
+|   |   |   |   |   |   |   |   ├── FoilHoles <br />
 
 Further development is required to make this robust to scenarios where other facilities use: <br />
     - Different data collection identifiers (i.e. bi23047-106 versus YYYYMMDD) <br />
