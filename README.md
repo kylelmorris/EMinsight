@@ -12,7 +12,7 @@ In a terminal, change directory into the cloned repository directory
 
 Run the following command to set up a vritual environment for EMinsight
 
-$ python -m python venv
+$ python -m venv python
 
 $ source python/bin/activate
 
