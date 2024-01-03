@@ -2733,8 +2733,9 @@ def getParticleDiameterCryolo(cboxes, sampling):
 
 def getParticleCoordsCryolo(cboxes):
 
-    # Allow all cryolo particle picks through for unbiased assessment
-    threshold = 0
+    # Allow all cryolo particle picks through for unbiased assessment using 0, filter out false positives using 0.3
+    #threshold = 0
+    threshold = 0.3
 
     coordinates_list = []  # List to store particle coordinates
 
